@@ -85,20 +85,12 @@ nav h2 {
     transform: scale(1.05);
 }
 
-/* HIDDEN DETAILS */
+/* DETAILS */
 .details {
     display: none;
     font-size: 14px;
     margin-top: 10px;
     color: #333;
-}
-
-/* FOOTER */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
 }
 
 /* CONTACT BUTTON */
@@ -120,6 +112,49 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* ========================= */
+/* FUTURE UPDATES (NEW DESIGN) */
+/* ========================= */
+
+.updates-section {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f5f7fa, #e8f0ff);
+    border-top: 3px solid #2F80ED;
+}
+
+.updates-section h2 {
+    text-align: center;
+    color: #2F80ED;
+    margin-bottom: 25px;
+}
+
+.update-card {
+    background: white;
+    width: 85%;
+    max-width: 650px;
+    margin: 15px auto;
+    padding: 18px;
+    border-radius: 12px;
+    border-left: 6px solid #2F80ED;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-weight: bold;
+}
+
+.update-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.update-card .details {
+    display: none;
+    font-weight: normal;
+    margin-top: 10px;
+    color: #444;
+    font-size: 14px;
 }
 </style>
 </head>
@@ -206,8 +241,38 @@ a:hover {
     </button>
 </div>
 
+<!-- FUTURE UPDATES (BOTTOM) -->
+<div id="updates" class="updates-section">
+    <h2>🚀 Future Updates (Coming Soon)</h2>
+
+    <div class="update-card" onclick="toggle(this)">
+        🛒 Online Booking System
+        <p class="details">Customers will soon be able to book laundry services online.</p>
+    </div>
+
+    <div class="update-card" onclick="toggle(this)">
+        📅 Schedule Pickup Form
+        <p class="details">Easy pickup scheduling with date and time selection.</p>
+    </div>
+
+    <div class="update-card" onclick="toggle(this)">
+        💳 Payment Integration UI
+        <p class="details">Support for GCash, cards, and online payments.</p>
+    </div>
+
+    <div class="update-card" onclick="toggle(this)">
+        📱 Mobile App-Style Layout
+        <p class="details">A smoother, app-like experience for mobile users.</p>
+    </div>
+
+    <div class="update-card" onclick="toggle(this)">
+        🌙 Dark Mode Toggle
+        <p class="details">Optional dark mode for better viewing at night.</p>
+    </div>
+</div>
+
 <!-- FOOTER -->
-<footer>
+<footer style="background:#333; color:white; text-align:center; padding:15px;">
     <p>© 2015 Swiftly Clean Laundry</p>
 </footer>
 
